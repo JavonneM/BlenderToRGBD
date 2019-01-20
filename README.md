@@ -5,9 +5,12 @@ This script iterates through each of the frames and renders the RGB frame, extra
 
 This extracts the RGBD information from a camera in the blender scene while iterating through each key frame in the Blender animation. The script is used
 as follows:
-    blender *BlenderFile* -P generateRGBD.py -- *Outputfolder* -r
-    blender ~/TestTranslation.blend -P generateRGBD.py -- ~/ThisIsATest/ -r
-
+```
+blender *BlenderFile* -P generateRGBD.py -- *Outputfolder* -r
+```
+```
+blender ~/TestTranslation.blend -P generateRGBD.py -- ~/ThisIsATest/ -r
+```
 **NOTE, PLEASE ENSURE THAT THE OUTPUTFOLDER IS EMPTY**
 
 ## Generated file format
