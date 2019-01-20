@@ -3,9 +3,10 @@
 This script uses *Blender* to generate RGB-D data in the format of the **Kinect V2** from a blender file using the animation system built in.
 This script iterates through each of the frames and renders the RGB frame, extracts the depth image and the ground truth.
 
-This extracts the RGBD information from a Blender animation
-blender *BlenderFile* -P generateRGBD.py -- *Outputfolder* -r
-blender ~/TestTranslation.blend -P generateRGBD.py -- ~/ThisIsATest/ -r
+This extracts the RGBD information from a camera in the blender scene while iterating through each key frame in the Blender animation. The script is used
+as follows:
+    blender *BlenderFile* -P generateRGBD.py -- *Outputfolder* -r
+    blender ~/TestTranslation.blend -P generateRGBD.py -- ~/ThisIsATest/ -r
 
 **NOTE, PLEASE ENSURE THAT THE OUTPUTFOLDER IS EMPTY**
 
